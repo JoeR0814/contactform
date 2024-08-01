@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Submit from '../Components/Submit';
 import DeleteButton from '../Components/Delete';
 
-function QuoteForm() {
+function ContactForm() {
   const [formData, setFormData] = useState({
     name: '',
     lastname: '',
@@ -40,7 +40,7 @@ function QuoteForm() {
     <div className='flex justify-center items-center min-h-screen p-4'>
       <div className='border border-gray-300 p-6 rounded-lg w-full max-w-lg bg-white'>
         <h1 className='text-3xl font-bold mb-6 text-center md:text-2xl sm:text-xl'>
-          Quote Form
+          Contact's Form
         </h1>
         <form className='flex flex-col' onSubmit={handleSubmit}>
           <label className='mb-4'>
@@ -107,5 +107,5 @@ function QuoteForm() {
   );
 }
 
-export default QuoteForm;
+export default ContactForm;
 

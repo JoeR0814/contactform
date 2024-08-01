@@ -1,13 +1,15 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import QuoteForm from './Pages/QuoteForm';
+import ContactForm from './Pages/ContactForm';
+import ReachOut from './Pages/ReachOut';
 
 function App() {
   return (
     <div>
       <Router>
         <Routes>
-          <Route path='/' element={<QuoteForm />} />
+          <Route path='/' element={<ContactForm />} />
+          <Route path='/reachout' element={<ReachOut />} />
         </Routes>
       </Router>
     </div>
