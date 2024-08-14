@@ -13,12 +13,9 @@ function Home() {
       }}
     >
       <div className='text-center flex flex-row selection justify- pb-4'>
-        <h1 className='border border-white-600o p-2 m-5 flex justify-center pl-6 text-white'>
-          The Contact Form Site
+        <h1 className='border border-white-600 w-1/2 mx-auto  m-5 pl-8 pb-1 text-white'>
+          Welcome to the Contact Form Site.
         </h1>
-        <p className='border border-white-600 w-1/2 mx-auto  m-5 pl-8 pb-1 text-white'>
-          Contact Forms created to you'er needs for the Internet
-        </p>
       </div>
     </div>
   );

@@ -10,6 +10,7 @@ function ContactForm() {
     email: '',
     phone: '',
     message: '',
+    textConsent: false,
   });
 
   const handleChange = (e) => {
@@ -22,9 +23,7 @@ function ContactForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form data submitted:', formData);
   };
-
   const handleDelete = () => {
     setFormData({
       name: '',
@@ -32,6 +31,7 @@ function ContactForm() {
       email: '',
       phone: '',
       message: '',
+      textConsent: false,
     });
   };
 
@@ -66,7 +66,7 @@ function ContactForm() {
               Last Name:
               <input
                 type='text'
-                name='lastname'
+                name='lastName'
                 placeholder='Last Name'
                 className='border border-gray-300 p-2 mt-1 w-full'
                 value={formData.lastName}
@@ -116,8 +116,8 @@ function ContactForm() {
               ></textarea>
             </label>
             <div className='flex justify-between mt-4'>
-              <Submit onClick={handleSubmit} />
-              <DeleteButton onClick={handleDelete} />
+              <Submit onClick={handleSubmit}>Submit</Submit>
+              <DeleteButton onClick={handleDelete}>Delete</DeleteButton>
             </div>
           </form>
         </div>
